@@ -3,11 +3,13 @@
     border-bottom-left-radius: 30px;
     border-top-left-radius: 30px;
     background: radial-gradient(rgb(236, 236, 236) 10%,black);
+    z-index: 1;
 }
 
 .nav-buttons {
     color: black;
     list-style-type: none;
+    z-index: 100;
 }
 
 .nav-buttons li {
