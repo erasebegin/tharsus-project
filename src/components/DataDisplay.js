@@ -7,41 +7,61 @@ import "../styles/DataDisplay.css";
 class DataDisplay extends React.Component {
 
   render() {
-    const {
-      apiData: { site_hours = {} }
-    } = this.props;
-    const { inside = 0, outside = 0 } = site_hours;
-    const {
-      apiData: { moving_hours = {} }
-    } = this.props;
-    const { moving = {}, stationary = 0 } = moving_hours;
-    const { inside: movingInside = 0, outside: movingOutside = 0 } = moving;
-    const {
-      apiData: { workforce_distribution = {} }
-    } = this.props;
-    const {
-      "Top Box": topBox = 0,
-      Firewall = 0,
-      Subs = 0,
-      PCB = 0,
-      "3D Build": threeD = 0,
-      FAT = 0,
-      "Wake Up": wakeUp = 0
-    } = workforce_distribution;
-    const {
-      apiData: { work_scatter_meters: workScatterMeters = 0 }
-    } = this.props;
-    const {
-      apiData: { minues_in_area = {} }
-    } = this.props;
-    const {
-      Stores: stores = 0,
-      "Goods In": goodsIn = 0,
-      Quality: quality = 0,
-      Inspection: inspection = 0
-    } = minues_in_area;
 
-    console.log("work scatter meters: ", workScatterMeters);
+    //API no longer exists, random numbers used instead for demonstration purposes
+
+    // const {
+    //   apiData: { site_hours = {} }
+    // } = this.props;
+    // const { inside = 0, outside = 0 } = site_hours;
+    // const {
+    //   apiData: { moving_hours = {} }
+    // } = this.props;
+    // const { moving = {}, stationary = 0 } = moving_hours;
+    // const { inside: movingInside = 0, outside: movingOutside = 0 } = moving;
+    // const {
+    //   apiData: { workforce_distribution = {} }
+    // } = this.props;
+    // const {
+    //   "Top Box": topBox = 0,
+    //   Firewall = 0,
+    //   Subs = 0,
+    //   PCB = 0,
+    //   "3D Build": threeD = 0,
+    //   FAT = 0,
+    //   "Wake Up": wakeUp = 0
+    // } = workforce_distribution;
+    // const {
+    //   apiData: { work_scatter_meters: workScatterMeters = 0 }
+    // } = this.props;
+    // const {
+    //   apiData: { minues_in_area = {} }
+    // } = this.props;
+    // const {
+    //   Stores: stores = 0,
+    //   "Goods In": goodsIn = 0,
+    //   Quality: quality = 0,
+    //   Inspection: inspection = 0
+    // } = minues_in_area;
+
+    let inside = Math.random();
+    let outside = Math.random();
+    let stationary = Math.random();
+    let movingInside = Math.random();
+    let movingOutside = Math.random();
+    let topBox = Math.random();
+    let Firewall = Math.random();
+    let Subs = Math.random();
+    let PCB = Math.random();
+    let threeD = Math.random();
+    let FAT = Math.random();
+    let wakeUp = Math.random();
+    let workScatterMeters = Math.random();
+    let stores = Math.random();
+    let goodsIn = Math.random();
+    let quality = Math.random();
+    let inspection = Math.random();
+    
 
     if (this.props.NavState === "movement") {
       return (
