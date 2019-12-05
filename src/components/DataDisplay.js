@@ -5,9 +5,6 @@ import DistributionDataDisplay from "./DistributionDataDisplay";
 import "../styles/DataDisplay.css";
 
 class DataDisplay extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     const {
